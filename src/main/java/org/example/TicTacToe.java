@@ -105,14 +105,14 @@ public class TicTacToe {
                 }
         }
         for (int i = 0; i <board[0].length ; i++) {
-            if(board[0][i]==board[1][i]&& board[1][i]==board[2][i] && board[i][0]!=' ') {
+            if(board[0][i]==board[1][i]&& board[1][i]==board[2][i] && board[0][i]!=' ') {
                 return 'X'==board[0][i]?1:2;
             }
         }
         if(board[0][0]==board[1][1]&& board[1][1]==board[2][2] && board[0][0]!=' ') {
             return 'X'==board[0][0]?1:2;
         }
-        if(board[0][2]==board[1][1]&& board[1][1]==board[2][0] && board[1][0]!=' ') {
+        if(board[0][2]==board[1][1]&& board[1][1]==board[2][0] && board[1][1]!=' ') {
             return 'X'==board[0][0]?1:2;
         }
         return 0;
